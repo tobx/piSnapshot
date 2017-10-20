@@ -2,7 +2,7 @@
 
 `piSnapshot` — Raspberry PI snapshot backups with rsync
 
-##Table of contents
+## Table of contents
 
   * [Installation](#installation)
   * [Help](#help)
