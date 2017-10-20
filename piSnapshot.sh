@@ -1,9 +1,6 @@
 #! /bin/bash
 #
 # piSnapshot - Backup your Raspberry PI
-#
-# Author: Tobias Strobel
-# Copyright (c) http://www.tobx.de
 
 set -e
 
