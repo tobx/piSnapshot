@@ -1,5 +1,5 @@
 # piSnapshot
-Create hard-linked snapshot backups of your Raspberry PI.
+`piSnapshot` — Raspberry PI snapshot backups with rsync
 
 ## Installation
 1. Clone or download piSnapshot files.
