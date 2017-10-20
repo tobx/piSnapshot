@@ -1,0 +1,7 @@
+/boot/*
+/dev/*
+/lost+found
+/proc/*
+/run/*
+/sys/*
+/tmp/*
