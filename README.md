@@ -9,8 +9,12 @@
 
 ## Installation
 
-  1. Clone or download piSnapshot files.
-  2. Run `piSnapshotInstall.sh` as root.
+Clone piSnapshot and run `piSnapshotInstall.sh` as root:
+
+```bash
+git clone "https://github.com/tobx/piSnapshot.git"
+sudo piSnapshot/piSnapshotInstall.sh
+```
 
 ## Help
 
