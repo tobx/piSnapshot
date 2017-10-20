@@ -48,7 +48,7 @@ backup() {
 	backup_boot_partition
 	backup_root_partition
 	mv "$incomplete_backup_path" "$new_backup_path"
-	rm "$latest_backup_path"
+	rm "$latest_backup_path" 2> /dev/null
 	ln -sr "$new_backup_path" "$latest_backup_path"
 	log "Backup successfully completed."
 }
