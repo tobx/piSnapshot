@@ -80,7 +80,7 @@ backup_root_partition() {
 
 backup_partition_table() {
 	log "Backing up partition table..."
-	sfdisk --quiet --dump "$system_device" > "$incomplete_backup_path/partition_table.txt"
+	sfdisk --quiet --dump "$system_device" > "$incomplete_backup_path/partition_table.dump"
 }
 
 create_backup_configuration_file() {
@@ -150,7 +150,7 @@ restore_root_partition() {
 
 restore_partition_table() {
 	log "Restoring partition table on '$restore_device'..."
-	sfdisk --quiet "$restore_device" < "$backup_path/partition_table.txt"
+	sfdisk --quiet "$restore_device" < "$backup_path/partition_table.dump"
 	sleep 1 # wait for kernel to reread partition table
 	printf "x\ni\n0x%s\nr\nw" "$partition_table_UUID" | fdisk "$restore_device" > /dev/null
 }
